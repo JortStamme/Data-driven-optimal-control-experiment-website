@@ -12,14 +12,14 @@ The videos below show the physical hardware response alongside the real-time **b
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error</div>
     <video id="vid1_gc" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../assets/modelbased/baseline/Khat_Baseline.mp4" type="video/mp4">
+      <source src="../../../../assets/modelbased/baseline/Khat_Baseline.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_gc" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../assets/modelbased/baseline/Khat_Baseline.mp4" type="video/mp4">
+      <source src="../../../../assets/modelbased/baseline/Khat_Baseline.mp4" type="video/mp4">
     </video>
   </div>
 </div>

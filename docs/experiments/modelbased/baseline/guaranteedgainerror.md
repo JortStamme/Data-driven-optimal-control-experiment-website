@@ -12,14 +12,14 @@ The videos below show the physical hardware response alongside the real-time **s
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Servo Angle</div>
     <video id="vid1_gge" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../assets/modelbased/baseline/Kbar_Baseline_servo_ml.mp4" type="video/mp4">
+      <source src="../../../../assets/modelbased/baseline/Kbar_Baseline_servo_ml.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_gge" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../assets/modelbased/baseline/Kbar_Baseline_edited.mp4" type="video/mp4">
+      <source src="../../../../assets/modelbased/baseline/Kbar_Baseline_edited.mp4" type="video/mp4">
     </video>
   </div>
 </div>
