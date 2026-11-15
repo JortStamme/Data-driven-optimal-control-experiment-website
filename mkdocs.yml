@@ -1,0 +1,49 @@
+
+site_name: Research Internship Experiments
+site_description: Experimental validation of data-driven and model-based control methods
+# Add this to enable math formatting and image resizing
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - md_in_html
+
+# Add this to load the MathJax script that actually draws the math
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+
+nav:
+  - Home: index.md
+
+  - Data-driven methods:
+      - Overview: experiments/datadriven/index.md
+      - Inertia Disc:
+          - Overview: experiments/datadriven/inertiadisc/index.md
+          - Excitation Signal: experiments/datadriven/inertiadisc/excitationsignal.md
+          - Reference Tracking: experiments/datadriven/inertiadisc/referencetracking.md
+      - Pendulum:
+          - Overview: experiments/datadriven/pendulum/index.md
+          - Probing Signal: experiments/datadriven/pendulum/probingsignal.md
+          - Robustness Test: experiments/datadriven/pendulum/robustnesstest.md
+
+  - Model-based methods:
+      - Overview: experiments/modelbased/index.md
+      - Baseline controllers: 
+          - Overview: experiments/modelbased/baseline/index.md
+          - Guaranteed-Cost Design: experiments/modelbased/baseline/guaranteed-cost.md
+          - Guaranteed Gain Error Design: experiments/modelbased/baseline/guaranteedgainerror.md
+          - sPI Algorithm: experiments/modelbased/baseline/sPI.md
+      - Alpha Sweep: 
+          - Overview: experiments/modelbased/alphasweep/index.md
+      - Gamma Sweep:
+          - Overview: experiments/modelbased/gammasweep/index.md
+    
