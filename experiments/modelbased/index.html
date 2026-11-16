@@ -1190,7 +1190,7 @@
 <hr />
 <h2 id="1-baseline-controllers">1. Baseline Controllers</h2>
 <p>The first experiments conducted on the hardware test the three primary controller designs at a nominal setting (<span class="arithmatex">\(\alpha = 0.98, \gamma = 0.5\)</span>). These tests evaluate disturbance rejection and steady-state behavior. A key observation from these baseline tests is that while the pendulum is stabilized, the guaranteed gain error design experiences severe <strong>servo drift</strong>, prompting further investigation.</p>
-<p>👉 <a href="baseline/"><strong>View Baseline Controller Experiments</strong></a></p>
+<p><a href="baseline/"><strong>View Baseline Controller Experiments</strong></a></p>
 <hr />
 <h2 id="2-decay-rate-alpha-sweep">2. Decay Rate (<span class="arithmatex">\(\alpha\)</span>) Sweep</h2>
 <p>Following the baseline experiments, a crucial question arose: <em>Is the servo drift a fundamental flaw of the controller, or just a result of the chosen decay rate <span class="arithmatex">\(\alpha\)</span>?</em> </p>
@@ -1198,12 +1198,12 @@
 1. <strong>Large <span class="arithmatex">\(\alpha\)</span> (<span class="arithmatex">\(\ge 0.98\)</span>):</strong> Pendulum is stable, but the servo wanders (drift).
 2. <strong>Intermediate <span class="arithmatex">\(\alpha\)</span> (<span class="arithmatex">\(\approx 0.965 - 0.975\)</span>):</strong> The "sweet spot" where both the pendulum and servo converge nicely.
 3. <strong>Small <span class="arithmatex">\(\alpha\)</span> (<span class="arithmatex">\(\le 0.96\)</span>):</strong> The controller becomes too aggressive, hitting the actuator voltage saturation limit (<span class="arithmatex">\(\pm 10\)</span> V) and causing limit-cycle oscillations.</p>
-<p>👉 <a href="alphasweep/"><strong>View <span class="arithmatex">\(\alpha\)</span>-Sweep Experiments</strong></a></p>
+<p><a href="alphasweep/"><strong>View <span class="arithmatex">\(\alpha\)</span>-Sweep Experiments</strong></a></p>
 <hr />
 <h2 id="3-discount-factor-gamma-sweep">3. Discount Factor (<span class="arithmatex">\(\gamma\)</span>) Sweep</h2>
 <p>Once the optimal decay rate window was identified (<span class="arithmatex">\(\alpha = 0.97\)</span>), a final set of experiments was conducted to test the effect of the discount factor <span class="arithmatex">\(\gamma\)</span>. </p>
 <p>These experiments vary <span class="arithmatex">\(\gamma\)</span> between 0.2 and 0.9 to answer how the loop's behavior changes depending on how heavily we discount the future. We observe that the guaranteed-cost design (<span class="arithmatex">\(\hat{K}_\gamma\)</span>) is highly sensitive to <span class="arithmatex">\(\gamma\)</span> and saturates at high values, while the guaranteed-gain error design (<span class="arithmatex">\(\bar{K}_\gamma\)</span>) remains largely independent of <span class="arithmatex">\(\gamma\)</span> due to active constraints.</p>
-<p>👉 <a href="gammasweep/"><strong>View <span class="arithmatex">\(\gamma\)</span>-Sweep Experiments</strong></a></p>
+<p><a href="gammasweep/"><strong>View <span class="arithmatex">\(\gamma\)</span>-Sweep Experiments</strong></a></p>
 
 
 

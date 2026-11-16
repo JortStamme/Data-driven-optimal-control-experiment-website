@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#model-based-decay-rate-alpha-sweep" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -905,6 +910,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -922,6 +947,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fixed-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-hardware-robustness-test-guaranteed-cost-hatk_gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Hardware Robustness Test: Guaranteed Cost (\(\hat{K}_\gamma\))
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hardware-robustness-test-guaranteed-gain-error-bark_gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Hardware Robustness Test: Guaranteed Gain Error (\(\bar{K}_\gamma\))
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hardware-steady-state-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hardware Steady-State Test
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1047,6 +1135,60 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fixed-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixed Parameters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-hardware-robustness-test-guaranteed-cost-hatk_gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Hardware Robustness Test: Guaranteed Cost (\(\hat{K}_\gamma\))
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-hardware-robustness-test-guaranteed-gain-error-bark_gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Hardware Robustness Test: Guaranteed Gain Error (\(\bar{K}_\gamma\))
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hardware-steady-state-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hardware Steady-State Test
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1063,9 +1205,45 @@
 
 
 
-  <h1>Overview</h1>
-
-
+<h1 id="model-based-decay-rate-alpha-sweep">Model-Based Decay-Rate (<span class="arithmatex">\(\alpha\)</span>) Sweep</h1>
+<p>In the baseline experiments (<span class="arithmatex">\(\alpha = 0.98\)</span>, <span class="arithmatex">\(\gamma = 0.5\)</span>), the guaranteed-cost controller (<span class="arithmatex">\(\hat{K}_\gamma\)</span>) successfully balanced the pendulum, whereas the guaranteed gain error controller (<span class="arithmatex">\(\bar{K}_\gamma\)</span>) lost the servo to drift despite having a lower theoretical cost and the same nominal decay-rate certificate.</p>
+<p>To understand why this happens—and to map the practical operating limits of both designs—the guaranteed decay rate <span class="arithmatex">\(\alpha\)</span> is swept while keeping all other baseline parameters fixed. Specifically, this sweep answers four questions:</p>
+<ol>
+<li>Does there exist an <span class="arithmatex">\(\alpha \in (0, 1)\)</span> for which <span class="arithmatex">\(\bar{K}_\gamma\)</span> avoids servo drift?</li>
+<li>Does there exist an <span class="arithmatex">\(\alpha \in (0, 1)\)</span> for which <span class="arithmatex">\(\hat{K}_\gamma\)</span> experiences servo drift?</li>
+<li>What is the practical lower limit <span class="arithmatex">\(\alpha_{\text{lim}}\)</span> below which actuator saturation (<span class="arithmatex">\(\pm 10\text{ V}\)</span>) prevents disturbance recovery?</li>
+<li>Is there a common window <span class="arithmatex">\(\alpha_{\text{conv}}\)</span> where both designs balance, avoid drift, and avoid saturation?</li>
+</ol>
+<h3 id="fixed-parameters">Fixed Parameters</h3>
+<p>Unless otherwise specified, all controllers in the <span class="arithmatex">\(\alpha\)</span>-sweep were synthesized using:</p>
+<ul>
+<li><strong>Sample Time (<span class="arithmatex">\(T_s\)</span>):</strong> 10 ms</li>
+<li><strong>Discount Factor (<span class="arithmatex">\(\gamma\)</span>):</strong> 0.5 (optimal closed loop is unstable with <span class="arithmatex">\(\rho(A + B K^\star_\gamma) \approx 1.11\)</span>)</li>
+<li><strong>State Cost (<span class="arithmatex">\(Q\)</span>):</strong> <span class="arithmatex">\(\text{diag}(100, 30, 10, 1)\)</span></li>
+<li><strong>Input Cost (<span class="arithmatex">\(R\)</span>):</strong> 10</li>
+<li><strong>Swept Parameter (<span class="arithmatex">\(\alpha\)</span>):</strong> <span class="arithmatex">\([0.80, 1.50]\)</span> (theoretical) and <span class="arithmatex">\(0.99 \to 0.94\)</span> (hardware)</li>
+</ul>
+<hr />
+<h2 id="1-hardware-robustness-test-guaranteed-cost-hatk_gamma">1. Hardware Robustness Test: Guaranteed Cost (<span class="arithmatex">\(\hat{K}_\gamma\)</span>)</h2>
+<p>The guaranteed-cost controller is tested on the Quanser QUBE-Servo 2 from <span class="arithmatex">\(\alpha = 0.99\)</span> down to <span class="arithmatex">\(\alpha = 0.94\)</span> under manual impulsive pushes to determine its disturbance-rejection range and saturation limit.</p>
+<ul>
+<li><strong>Observation:</strong> Shows <strong>no servo drift</strong> across all tested <span class="arithmatex">\(\alpha\)</span> values (including <span class="arithmatex">\(\alpha = 0.99\)</span>) and recovers cleanly down to <span class="arithmatex">\(\alpha = 0.965\)</span>. Below <span class="arithmatex">\(\alpha = 0.96\)</span>, actuator saturation induces sustained oscillations, giving a practical limit <span class="arithmatex">\(\hat{\alpha}_{\text{lim}} \approx 0.965\)</span>.</li>
+</ul>
+<p><a href="guaranteedcostsweep/"><strong>View the Guaranteed Cost <span class="arithmatex">\(\alpha\)</span>-Sweep Experiments</strong></a></p>
+<hr />
+<h2 id="2-hardware-robustness-test-guaranteed-gain-error-bark_gamma">2. Hardware Robustness Test: Guaranteed Gain Error (<span class="arithmatex">\(\bar{K}_\gamma\)</span>)</h2>
+<p>The guaranteed gain error controller is tested over the same <span class="arithmatex">\(\alpha \in [0.94, 0.99]\)</span> range to determine whether enforcing a faster decay rate eliminates the servo drift seen in the baseline.</p>
+<ul>
+<li><strong>Observation:</strong> Servo drift disappears once <span class="arithmatex">\(\alpha \le 0.975\)</span>, and pushes are recovered down to <span class="arithmatex">\(\alpha = 0.96\)</span> (<span class="arithmatex">\(\bar{\alpha}_{\text{lim}} \approx 0.96\)</span>). Notably, both <span class="arithmatex">\(\hat{K}_\gamma\)</span> and <span class="arithmatex">\(\bar{K}_\gamma\)</span> lose robustness at the same pendulum-gain threshold (<span class="arithmatex">\(|K_\phi| \approx 24\text{ V/rad}\)</span>), even though their nominal <span class="arithmatex">\(\alpha\)</span> differs by <span class="arithmatex">\(0.01\)</span>.</li>
+</ul>
+<p><a href="guaranteedgainsweep/"><strong>View the Guaranteed Gain Error <span class="arithmatex">\(\alpha\)</span>-Sweep Experiments</strong></a></p>
+<hr />
+<h2 id="4-hardware-steady-state-test">4. Hardware Steady-State Test</h2>
+<p>To evaluate disturbance-free behavior and quantify slow servo wander, both controllers are run twice for <span class="arithmatex">\(\approx 30\text{ s}\)</span> without pushes at each <span class="arithmatex">\(\alpha\)</span>.</p>
+<ul>
+<li><strong>Observation:</strong> No saturation occurs in steady state (<span class="arithmatex">\(0\%\)</span>), but at large <span class="arithmatex">\(\alpha\)</span> (small <span class="arithmatex">\(K_\psi\)</span>) the servo wanders slowly. Using the settling threshold <span class="arithmatex">\(\text{RMS}_\psi \le 15^\circ\)</span> (and drift slope <span class="arithmatex">\(&lt; 0.1^\circ/\text{s}\)</span>), <span class="arithmatex">\(\bar{K}_\gamma\)</span> settles for <span class="arithmatex">\(\alpha \le 0.97\)</span> and <span class="arithmatex">\(\hat{K}_\gamma\)</span> for <span class="arithmatex">\(\alpha \le 0.98\)</span>. Combining this with the robustness limits yields usable windows of <span class="arithmatex">\([0.96, 0.97]\)</span> for <span class="arithmatex">\(\bar{K}_\gamma\)</span> and <span class="arithmatex">\([0.965, 0.98]\)</span> for <span class="arithmatex">\(\hat{K}_\gamma\)</span>, leaving a <strong>common convergence window <span class="arithmatex">\(\alpha_{\text{conv}} \in \{0.965, 0.97\}\)</span></strong> of width <span class="arithmatex">\(\approx 0.01\)</span>.</li>
+</ul>
+<p><a href="steady-state/"><strong>View the Steady-State <span class="arithmatex">\(\alpha\)</span>-Sweep Experiments</strong></a></p>
 
 
 
