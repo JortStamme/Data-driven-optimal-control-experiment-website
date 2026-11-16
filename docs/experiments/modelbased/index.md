@@ -12,7 +12,7 @@ The experiments follow a chronological progression, moving from initial baseline
 
 The first experiments conducted on the hardware test the three primary controller designs at a nominal setting (\(\alpha = 0.98, \gamma = 0.5\)). These tests evaluate disturbance rejection and steady-state behavior. A key observation from these baseline tests is that while the pendulum is stabilized, the guaranteed gain error design experiences severe **servo drift**, prompting further investigation.
 
-👉 [**View Baseline Controller Experiments**](baseline/index.md)
+[**View Baseline Controller Experiments**](baseline/index.md)
 
 ---
 
@@ -25,7 +25,7 @@ This set of experiments sweeps the decay rate \(\alpha\) from 0.99 down to 0.94 
 2. **Intermediate \(\alpha\) (\(\approx 0.965 - 0.975\)):** The "sweet spot" where both the pendulum and servo converge nicely.
 3. **Small \(\alpha\) (\(\le 0.96\)):** The controller becomes too aggressive, hitting the actuator voltage saturation limit (\(\pm 10\) V) and causing limit-cycle oscillations.
 
-👉 [**View \(\alpha\)-Sweep Experiments**](alphasweep/index.md)
+[**View \(\alpha\)-Sweep Experiments**](alphasweep/index.md)
 
 ---
 
@@ -35,4 +35,4 @@ Once the optimal decay rate window was identified (\(\alpha = 0.97\)), a final s
 
 These experiments vary \(\gamma\) between 0.2 and 0.9 to answer how the loop's behavior changes depending on how heavily we discount the future. We observe that the guaranteed-cost design (\(\hat{K}_\gamma\)) is highly sensitive to \(\gamma\) and saturates at high values, while the guaranteed-gain error design (\(\bar{K}_\gamma\)) remains largely independent of \(\gamma\) due to active constraints.
 
-👉 [**View \(\gamma\)-Sweep Experiments**](gammasweep/index.md)
+[**View \(\gamma\)-Sweep Experiments**](gammasweep/index.md)
