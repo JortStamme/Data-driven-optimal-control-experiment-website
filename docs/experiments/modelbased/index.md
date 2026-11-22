@@ -4,7 +4,7 @@ This section presents the experimental validation of the model-based control met
 
 Because the optimal discounted LQR controller is often unstable on the actual hardware (for discount factors like \(\gamma = 0.5\)), we designed and tested alternative state-feedback controllers. These controllers enforce a guaranteed decay rate (\(\alpha\)) using Linear Matrix Inequalities (LMIs) while remaining as close to optimal as possible.
 
-The experiments follow a chronological progression, moving from initial baseline tests to detailed parameter sweeps to find the physical limits of the Quanser QUBE-Servo 2.
+The experiments follow a chronological progression, moving from initial baseline tests to parameter sweeps that map the physical operating limits of the Quanser QUBE-Servo 2.
 
 ---
 
@@ -20,10 +20,12 @@ The first experiments conducted on the hardware test the three primary controlle
 
 Following the baseline experiments, a crucial question arose: *Is the servo drift a fundamental flaw of the controller, or just a result of the chosen decay rate \(\alpha\)?* 
 
-This set of experiments sweeps the decay rate \(\alpha\) from 0.99 down to 0.94 to find the practical operating window. We observe three distinct regimes on the hardware:
-1. **Large \(\alpha\) (\(\ge 0.98\)):** Pendulum is stable, but the servo wanders (drift).
-2. **Intermediate \(\alpha\) (\(\approx 0.965 - 0.975\)):** The "sweet spot" where both the pendulum and servo converge nicely.
-3. **Small \(\alpha\) (\(\le 0.96\)):** The controller becomes too aggressive, hitting the actuator voltage saturation limit (\(\pm 10\) V) and causing limit-cycle oscillations.
+In the thesis, the decay rate \(\alpha\) is swept from \(0.99\) down to \(0.94\) to map the practical operating window, revealing three distinct regimes on the hardware:
+1. **Large \(\alpha\) (\(\ge 0.98\)):** Pendulum is stable, but the servo wanders (drift in \(\bar{K}_\gamma\)).
+2. **Intermediate \(\alpha\) (\(\approx 0.965 - 0.975\)):** The usable operating window where both the pendulum and servo converge without saturation-induced oscillations.
+3. **Small \(\alpha\) (\(\le 0.96\)):** The controller becomes too aggressive, hitting the actuator voltage saturation limit (\(\pm 10\) V) and causing limit-cycle oscillations (and immediate calibration instability by \(\alpha = 0.94\)).
+
+This archive features the key representative experiments from the robustness sweep: \(\alpha \in \{0.97, 0.965\}\) for the guaranteed gain error design (\(\bar{K}_\gamma\)) and \(\alpha \in \{0.965, 0.96, 0.94\}\) for the guaranteed-cost design (\(\hat{K}_\gamma\)).
 
 [**View \(\alpha\)-Sweep Experiments**](alphasweep/index.md)
 

@@ -20,11 +20,11 @@ Unless otherwise specified, all controllers in the \(\alpha\)-sweep were synthes
 
 ---
 
-
 ## 1. Hardware Robustness Test: Guaranteed Cost (\(\hat{K}_\gamma\))
 The guaranteed-cost controller is tested on the Quanser QUBE-Servo 2 from \(\alpha = 0.99\) down to \(\alpha = 0.94\) under manual impulsive pushes to determine its disturbance-rejection range and saturation limit.
 
-* **Observation:** Shows **no servo drift** across all tested \(\alpha\) values (including \(\alpha = 0.99\)) and recovers cleanly down to \(\alpha = 0.965\). Below \(\alpha = 0.96\), actuator saturation induces sustained oscillations, giving a practical limit \(\hat{\alpha}_{\text{lim}} \approx 0.965\).
+* **Observation:** Shows **no servo drift** across the tested range and recovers cleanly down to \(\alpha = 0.965\) (\(\hat{\alpha}_{\text{lim}} \approx 0.965\)). Below \(\alpha = 0.965\), actuator saturation induces sustained oscillations (\(\alpha = 0.96\)), and by \(\alpha = 0.94\) the controller becomes unstable immediately at calibration.
+* **Included Videos:** \(\alpha = 0.965\), \(\alpha = 0.96\), and \(\alpha = 0.94\).
 
 [**View the Guaranteed Cost \(\alpha\)-Sweep Experiments**](guaranteedcostsweep.md)
 
@@ -34,14 +34,6 @@ The guaranteed-cost controller is tested on the Quanser QUBE-Servo 2 from \(\alp
 The guaranteed gain error controller is tested over the same \(\alpha \in [0.94, 0.99]\) range to determine whether enforcing a faster decay rate eliminates the servo drift seen in the baseline.
 
 * **Observation:** Servo drift disappears once \(\alpha \le 0.975\), and pushes are recovered down to \(\alpha = 0.96\) (\(\bar{\alpha}_{\text{lim}} \approx 0.96\)). Notably, both \(\hat{K}_\gamma\) and \(\bar{K}_\gamma\) lose robustness at the same pendulum-gain threshold (\(|K_\phi| \approx 24\text{ V/rad}\)), even though their nominal \(\alpha\) differs by \(0.01\).
+* **Included Videos:** \(\alpha = 0.965\) and \(\alpha = 0.96\).
 
 [**View the Guaranteed Gain Error \(\alpha\)-Sweep Experiments**](guaranteedgainsweep.md)
-
----
-
-## 4. Hardware Steady-State Test
-To evaluate disturbance-free behavior and quantify slow servo wander, both controllers are run twice for \(\approx 30\text{ s}\) without pushes at each \(\alpha\).
-
-* **Observation:** No saturation occurs in steady state (\(0\%\)), but at large \(\alpha\) (small \(K_\psi\)) the servo wanders slowly. Using the settling threshold \(\text{RMS}_\psi \le 15^\circ\) (and drift slope \(< 0.1^\circ/\text{s}\)), \(\bar{K}_\gamma\) settles for \(\alpha \le 0.97\) and \(\hat{K}_\gamma\) for \(\alpha \le 0.98\). Combining this with the robustness limits yields usable windows of \([0.96, 0.97]\) for \(\bar{K}_\gamma\) and \([0.965, 0.98]\) for \(\hat{K}_\gamma\), leaving a **common convergence window \(\alpha_{\text{conv}} \in \{0.965, 0.97\}\)** of width \(\approx 0.01\).
-
-[**View the Steady-State \(\alpha\)-Sweep Experiments**](steady-state.md)

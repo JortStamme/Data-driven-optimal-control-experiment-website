@@ -25,25 +25,27 @@ nav:
   - Home: index.md
 
   - Data-driven methods:
-      - Overview: experiments/datadriven/index.md
+      - experiments/datadriven/index.md
       - Inertia Disc:
-          - Overview: experiments/datadriven/inertiadisc/index.md
-          - Excitation Signal: experiments/datadriven/inertiadisc/excitationsignal.md
-          - Reference Tracking: experiments/datadriven/inertiadisc/referencetracking.md
+          - experiments/datadriven/inertiadisc/index.md
+          - SW 5: experiments/datadriven/inertiadisc/sw5.md
+          - SW 50: experiments/datadriven/inertiadisc/sw50.md
+          - Chirp: experiments/datadriven/inertiadisc/chirp.md
       - Pendulum:
-          - Overview: experiments/datadriven/pendulum/index.md
+          - experiments/datadriven/pendulum/index.md
           - Probing Signal: experiments/datadriven/pendulum/probingsignal.md
           - Robustness Test: experiments/datadriven/pendulum/robustnesstest.md
 
   - Model-based methods:
-      - Overview: experiments/modelbased/index.md
-      - Baseline controllers: 
-          - Overview: experiments/modelbased/baseline/index.md
+      - experiments/modelbased/index.md
+      - Baseline controllers:
+          - experiments/modelbased/baseline/index.md
           - Guaranteed-Cost Design: experiments/modelbased/baseline/guaranteed-cost.md
           - Guaranteed Gain Error Design: experiments/modelbased/baseline/guaranteedgainerror.md
           - sPI Algorithm: experiments/modelbased/baseline/sPI.md
-      - Alpha Sweep: 
-          - Overview: experiments/modelbased/alphasweep/index.md
+      - Alpha Sweep:
+          - experiments/modelbased/alphasweep/index.md
+          - Guaranteed-Cost Design: experiments/modelbased/alphasweep/guaranteedcostsweep.md
+          - Guaranteed Gain Error Design: experiments/modelbased/alphasweep/guaranteedgainsweep.md
       - Gamma Sweep:
-          - Overview: experiments/modelbased/gammasweep/index.md
-    
+          - experiments/modelbased/gammasweep/index.md
