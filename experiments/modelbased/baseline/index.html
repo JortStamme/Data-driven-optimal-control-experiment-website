@@ -25,7 +25,7 @@
     
     
       
-        <title>Overview - Research Internship Experiments</title>
+        <title>Model-Based Baseline Controllers - Research Internship Experiments</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Model-Based Baseline Controllers
             
           </span>
         </div>
@@ -286,7 +286,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Data-Driven Experiments
   
 
     
@@ -365,7 +365,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Inertia Disc Experiments
   
 
     
@@ -386,14 +386,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datadriven/inertiadisc/excitationsignal/" class="md-nav__link">
+      <a href="../../datadriven/inertiadisc/sw5/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Excitation Signal
+    SW 5
   
 
     
@@ -414,14 +414,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datadriven/inertiadisc/referencetracking/" class="md-nav__link">
+      <a href="../../datadriven/inertiadisc/sw50/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Reference Tracking
+    SW 50
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadriven/inertiadisc/chirp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chirp
   
 
     
@@ -508,7 +536,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Inverted Pendulum Experiments (Data-Driven)
   
 
     
@@ -661,7 +689,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based Controller Experiments
   
 
     
@@ -749,7 +777,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based Baseline Controllers
   
 
     
@@ -767,7 +795,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based Baseline Controllers
   
 
     
@@ -793,46 +821,80 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#baseline-parameters" class="md-nav__link">
+  <a href="#experimental-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Baseline Parameters
+        Experimental setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experimental setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baseline-parameters-hardware-summary-tables-51-54-c1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Baseline Parameters &amp; Hardware Summary (Tables 5.1, 5.4 &amp; C.1)
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#guaranteed-cost-design-hatk_gamma" class="md-nav__link">
+  <a href="#experiments" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Guaranteed Cost Design (\(\hat{K}_\gamma\))
+        Experiments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-guaranteed-cost-design-hatk_gamma-theorem-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Guaranteed Cost Design (\(\hat{K}_\gamma\), Theorem 2.9)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#guaranteed-gain-error-design-bark_gamma" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-guaranteed-gain-error-design-bark_gamma-theorem-212" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Guaranteed Gain Error Design (\(\bar{K}_\gamma\))
+        2. Guaranteed Gain Error Design (\(\bar{K}_\gamma\), Theorem 2.12)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#stabilizing-policy-iteration-spi" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-stabilizing-policy-iteration-spi-algorithm-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Stabilizing Policy Iteration (sPI)
+        3. Stabilizing Policy Iteration (sPI, Algorithm 1)
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -966,7 +1028,7 @@
   <span class="md-ellipsis">
     
   
-    Alpha Sweep
+    \(\alpha\) Sweep
   
 
     
@@ -982,7 +1044,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Alpha Sweep
+    \(\alpha\) Sweep
   
 
           </label>
@@ -1002,7 +1064,63 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based Decay-Rate (\(\alpha\)) Sweep
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alphasweep/guaranteedcostsweep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guaranteed-Cost Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../alphasweep/guaranteedgainsweep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guaranteed Gain Error Design
   
 
     
@@ -1053,7 +1171,7 @@
   <span class="md-ellipsis">
     
   
-    Gamma Sweep
+    \(\gamma\) Sweep
   
 
     
@@ -1069,7 +1187,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Gamma Sweep
+    \(\gamma\) Sweep
   
 
           </label>
@@ -1089,7 +1207,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based: Discount Factor \(\gamma\)-Sweep (\(\alpha = 0.97\))
   
 
     
@@ -1145,46 +1263,80 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#baseline-parameters" class="md-nav__link">
+  <a href="#experimental-setup" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Baseline Parameters
+        Experimental setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experimental setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baseline-parameters-hardware-summary-tables-51-54-c1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Baseline Parameters &amp; Hardware Summary (Tables 5.1, 5.4 &amp; C.1)
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#guaranteed-cost-design-hatk_gamma" class="md-nav__link">
+  <a href="#experiments" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Guaranteed Cost Design (\(\hat{K}_\gamma\))
+        Experiments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Experiments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-guaranteed-cost-design-hatk_gamma-theorem-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Guaranteed Cost Design (\(\hat{K}_\gamma\), Theorem 2.9)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#guaranteed-gain-error-design-bark_gamma" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-guaranteed-gain-error-design-bark_gamma-theorem-212" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Guaranteed Gain Error Design (\(\bar{K}_\gamma\))
+        2. Guaranteed Gain Error Design (\(\bar{K}_\gamma\), Theorem 2.12)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#stabilizing-policy-iteration-spi" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-stabilizing-policy-iteration-spi-algorithm-1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Stabilizing Policy Iteration (sPI)
+        3. Stabilizing Policy Iteration (sPI, Algorithm 1)
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1206,38 +1358,86 @@
 
 
 <h1 id="model-based-baseline-controllers">Model-Based Baseline Controllers</h1>
-<p>Before performing extensive parameter sweeps, the three proposed model-based control strategies were implemented and tested on the Quanser QUBE-Servo 2 using a nominal set of baseline parameters.</p>
-<h3 id="baseline-parameters">Baseline Parameters</h3>
-<p>Unless otherwise specified, the controllers in this section were synthesized using the following parameters:</p>
+<h2 id="experimental-setup">Experimental setup</h2>
+<p>Before performing parameter sweeps over <span class="arithmatex">\(\alpha\)</span> and <span class="arithmatex">\(\gamma\)</span>, the three model-based discounted LQR designs of <strong>Chapter 2</strong> are validated on the Quanser QUBE-Servo 2 rotary inverted pendulum (<strong>Section 5.1.1–5.1.2</strong>). All controllers are synthesised on the fourth-order reduced linearised upright model (<span class="arithmatex">\(n = 4\)</span>, <span class="arithmatex">\(m = 1\)</span>, <span class="arithmatex">\(T_s = 10\text{ ms}\)</span>) at a destabilising discount factor <span class="arithmatex">\(\gamma = 0.5\)</span>, where the optimal discounted controller is open-loop/closed-loop unstable (<span class="arithmatex">\(\rho(A + BK_\gamma^\star) = 1.1098 &gt; 1\)</span>).</p>
+<p>After verifying all theoretical LMI and sPI certificates in simulation (Tables 5.2–5.3), each controller is evaluated on hardware under steady-state balancing and irregular manual pushes. Although <span class="arithmatex">\(\bar{K}_\gamma\)</span> and its sPI refinement achieve lower model cost at <span class="arithmatex">\(x_0 = [0.1, 0, 0, 0]^\top\)</span>, their weak servo feedback (<span class="arithmatex">\(K_\psi \approx 0.47\text{ V/rad}\)</span>) fails to overcome unmodelled Coulomb stiction and encoder-cable asymmetry—causing monotonic servo drift into the <span class="arithmatex">\(130^\circ\)</span> safety cut-off—whereas <span class="arithmatex">\(\hat{K}_\gamma\)</span> (<span class="arithmatex">\(K_\psi = 0.98\text{ V/rad}\)</span>) balances and recovers cleanly.</p>
+<h3 id="baseline-parameters-hardware-summary-tables-51-54-c1">Baseline Parameters &amp; Hardware Summary (Tables 5.1, 5.4 &amp; C.1)</h3>
 <ul>
-<li><strong>Sample Time (<span class="arithmatex">\(T_s\)</span>):</strong> 10 ms</li>
-<li><strong>Discount Factor (<span class="arithmatex">\(\gamma\)</span>):</strong> 0.5</li>
-<li><strong>Guaranteed Decay Rate (<span class="arithmatex">\(\alpha\)</span>):</strong> 0.98</li>
-<li><strong>State Cost (<span class="arithmatex">\(Q\)</span>):</strong> <span class="arithmatex">\(\text{diag}(100, 30, 10, 1)\)</span></li>
-<li><strong>Input Cost (<span class="arithmatex">\(R\)</span>):</strong> 10</li>
+<li><strong>Sample Time (<span class="arithmatex">\(T_s\)</span>):</strong> <span class="arithmatex">\(10\text{ ms}\)</span></li>
+<li><strong>Discount Factor (<span class="arithmatex">\(\gamma\)</span>):</strong> <span class="arithmatex">\(0.5\)</span> (<span class="arithmatex">\(\rho(A + BK_\gamma^\star) = 1.1098\)</span>)</li>
+<li><strong>Guaranteed Decay Rate (<span class="arithmatex">\(\alpha\)</span>):</strong> <span class="arithmatex">\(0.98\)</span></li>
+<li><strong>State &amp; Input Costs:</strong> <span class="arithmatex">\(Q = \text{diag}(100, 30, 10, 1)\)</span>, <span class="arithmatex">\(R = 10\)</span></li>
 </ul>
-<p>Below, you can explore the videos, theoretical guarantees, and experimental observations for each specific controller. </p>
-<hr />
-<h2 id="guaranteed-cost-design-hatk_gamma">Guaranteed Cost Design (<span class="arithmatex">\(\hat{K}_\gamma\)</span>)</h2>
-<p>This approach synthesizes a gain by solving a convex optimization problem that minimizes an upper bound on the cost of the closed-loop system, ensuring the system decays at the prescribed rate <span class="arithmatex">\(\alpha\)</span>.</p>
-<ul>
-<li><strong>Observation:</strong> Successfully balances the pendulum and keeps the servo relatively stationary without hitting actuator saturation limits.</li>
-</ul>
-<p><a href="guaranteed-cost/"><strong>View the Guaranteed Cost Controller Experiment</strong></a></p>
-<hr />
-<h2 id="guaranteed-gain-error-design-bark_gamma">Guaranteed Gain Error Design (<span class="arithmatex">\(\bar{K}_\gamma\)</span>)</h2>
-<p>Instead of bounding the cost directly, this design aims to find a stabilizing gain that is as close as possible (in the spectral norm sense) to the optimal—but unstable—discounted gain <span class="arithmatex">\(K^\star_\gamma\)</span>.</p>
-<ul>
-<li><strong>Observation:</strong> While it successfully balances the pendulum, the hardware tests reveal significant <strong>servo drift/wandering</strong> at this specific <span class="arithmatex">\(\alpha\)</span> value, highlighting a limitation that is explored further in the <span class="arithmatex">\(\alpha\)</span>-sweep.</li>
-</ul>
-<p><a href="guaranteedgainerror/"><strong>View the Guaranteed Gain Error Controller Experiment</strong></a></p>
-<hr />
-<h2 id="stabilizing-policy-iteration-spi">Stabilizing Policy Iteration (sPI)</h2>
-<p>The sPI algorithm is an iterative approach (a variant of policy iteration) that improves a stabilizing gain step-by-step. It uses a convex combination of the previous gain and the standard policy improvement step to ensure every iteration remains stabilizing with respect to <span class="arithmatex">\(\alpha\)</span>.</p>
-<ul>
-<li><strong>Observation:</strong> Shows monotonic theoretical cost improvement, though the final stability margin ends up resting exactly on the boundary of the allowed decay rate <span class="arithmatex">\(\alpha\)</span>.</li>
-</ul>
-<p><a href="sPI/"><strong>View the sPI Controller Experiments</strong></a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Controller</th>
+<th style="text-align: left;">Gain <span class="arithmatex">\([K_{\delta\phi}, K_\psi, K_{\dot{\delta\phi}}, K_{\dot{\psi}}]\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(J_\gamma(x_0, K)\)</span></th>
+<th style="text-align: center;">Pushes</th>
+<th style="text-align: center;"><span class="arithmatex">\(\max\lvert u\rvert\)</span> [V]</th>
+<th style="text-align: center;"><span class="arithmatex">\(\text{rms}\,\delta_\phi\)</span> [<span class="arithmatex">\(^\circ\)</span>]</th>
+<th style="text-align: left;">Hardware Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><span class="arithmatex">\(\hat{K}_\gamma\)</span></strong> (Thm. 2.9)</td>
+<td style="text-align: left;"><code>[-15.5694, 0.9794, -1.1520, 0.5478]</code></td>
+<td style="text-align: center;">47.16</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5.23</td>
+<td style="text-align: center;">0.73</td>
+<td style="text-align: left;">Balances, recovers (<span class="arithmatex">\(\hat{\rho} \in [0.955, 0.981]\)</span>); <span class="arithmatex">\(\psi\)</span> offset <span class="arithmatex">\(\approx 22^\circ\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span class="arithmatex">\(\text{sPI}, K_0 = \hat{K}_\gamma\)</span></strong> (Alg. 1)</td>
+<td style="text-align: left;"><code>[-12.8868, 0.8021, -0.9877, 0.4456]</code></td>
+<td style="text-align: center;">34.10</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">6.05</td>
+<td style="text-align: center;">1.76</td>
+<td style="text-align: left;">Balances, recovers (<span class="arithmatex">\(\hat{\rho} \in [0.978, 0.980]\)</span>); oscillatory</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span class="arithmatex">\(\bar{K}_\gamma\)</span></strong> (Thm. 2.12)</td>
+<td style="text-align: left;"><code>[-12.0781, 0.4684, -1.0026, 0.2963]</code></td>
+<td style="text-align: center;">29.14</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1.91</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: left;"><span class="arithmatex">\(\psi\)</span> drifts to <span class="arithmatex">\(130^\circ\)</span> after <span class="arithmatex">\(\approx 2.72\text{ s}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span class="arithmatex">\(\text{sPI}, K_0 = \bar{K}_\gamma\)</span></strong> (Alg. 1)</td>
+<td style="text-align: left;"><code>[-12.0487, 0.4672, -1.0006, 0.2956]</code></td>
+<td style="text-align: center;">29.03</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1.91</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: left;"><span class="arithmatex">\(\psi\)</span> drifts to <span class="arithmatex">\(130^\circ\)</span> after <span class="arithmatex">\(\approx 2.16\text{ s}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">---</td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="experiments">Experiments</h2>
+<h3 id="1-guaranteed-cost-design-hatk_gamma-theorem-29">1. Guaranteed Cost Design (<span class="arithmatex">\(\hat{K}_\gamma\)</span>, Theorem 2.9)</h3>
+<p>Minimises a convex upper bound <span class="arithmatex">\(\text{trace}(\hat{W}_\gamma)\)</span> on the discounted closed-loop cost while enforcing the decay rate <span class="arithmatex">\(\alpha = 0.98\)</span> (<span class="arithmatex">\(\rho_{\text{model}} = 0.9731\)</span>). Allocates sufficient servo authority (<span class="arithmatex">\(K_\psi = 0.9794\text{ V/rad}\)</span>) to balance and recover from all four manual pushes without saturation, settling with a bounded <span class="arithmatex">\(\approx 22^\circ\)</span> servo offset.</p>
+<p><a href="guaranteed-cost/"><strong>View Guaranteed Cost Experiment</strong></a></p>
+<h3 id="2-guaranteed-gain-error-design-bark_gamma-theorem-212">2. Guaranteed Gain Error Design (<span class="arithmatex">\(\bar{K}_\gamma\)</span>, Theorem 2.12)</h3>
+<p>Minimises the spectral-norm distance <span class="arithmatex">\(\|\bar{K}_\gamma - K_\gamma^\star\|\)</span> to the unstable optimal gain while enforcing <span class="arithmatex">\(\alpha = 0.98\)</span> (<span class="arithmatex">\(\rho_{\text{model}} = 0.9799\)</span>). Although it achieves a lower theoretical cost (<span class="arithmatex">\(29.14\)</span> vs. <span class="arithmatex">\(47.16\)</span>), pushing the closed-loop spectrum onto <span class="arithmatex">\(\alpha\)</span> allocates weak servo feedback (<span class="arithmatex">\(K_\psi = 0.4684\text{ V/rad}\)</span>), leading to monotonic servo drift into the <span class="arithmatex">\(130^\circ\)</span> safety cut-off.</p>
+<p><a href="guaranteedgainerror/"><strong>View Guaranteed Gain Error Experiment</strong></a></p>
+<h3 id="3-stabilizing-policy-iteration-spi-algorithm-1">3. Stabilizing Policy Iteration (sPI, Algorithm 1)</h3>
+<p>Iteratively refines both LMI initialisations (<span class="arithmatex">\(K_0 = \hat{K}_\gamma\)</span> over <span class="arithmatex">\(76\)</span> iterations; <span class="arithmatex">\(K_0 = \bar{K}_\gamma\)</span> over <span class="arithmatex">\(35\)</span> iterations) via convex combinations with the policy-improvement step under <span class="arithmatex">\(\rho(A+BK_j) &lt; \alpha\)</span>. Cost drops monotonically (<span class="arithmatex">\(27.7\%\)</span> from <span class="arithmatex">\(\hat{K}_\gamma\)</span>; <span class="arithmatex">\(0.39\%\)</span> from <span class="arithmatex">\(\bar{K}_\gamma\)</span>), but pushing <span class="arithmatex">\(\rho\)</span> onto <span class="arithmatex">\(\alpha\)</span> reduces disturbance damping for <span class="arithmatex">\(K_0 = \hat{K}_\gamma\)</span> (<span class="arithmatex">\(\text{rms}\,\delta_\phi = 1.76^\circ\)</span>) and preserves servo drift for <span class="arithmatex">\(K_0 = \bar{K}_\gamma\)</span>.</p>
+<p><a href="sPI/"><strong>View sPI Controller Experiments</strong></a></p>
 
 
 

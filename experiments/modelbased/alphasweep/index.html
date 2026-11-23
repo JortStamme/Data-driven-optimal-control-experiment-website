@@ -14,7 +14,7 @@
         <link rel="prev" href="../baseline/sPI/">
       
       
-        <link rel="next" href="../gammasweep/">
+        <link rel="next" href="guaranteedcostsweep/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Overview - Research Internship Experiments</title>
+        <title>Model-Based Decay-Rate (\(\alpha\)) Sweep - Research Internship Experiments</title>
       
     
     
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Model-Based Decay-Rate (\(\alpha\)) Sweep
             
           </span>
         </div>
@@ -286,7 +286,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Data-Driven Experiments
   
 
     
@@ -365,7 +365,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Inertia Disc Experiments
   
 
     
@@ -386,14 +386,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datadriven/inertiadisc/excitationsignal/" class="md-nav__link">
+      <a href="../../datadriven/inertiadisc/sw5/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Excitation Signal
+    SW 5
   
 
     
@@ -414,14 +414,42 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datadriven/inertiadisc/referencetracking/" class="md-nav__link">
+      <a href="../../datadriven/inertiadisc/sw50/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Reference Tracking
+    SW 50
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadriven/inertiadisc/chirp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chirp
   
 
     
@@ -508,7 +536,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Inverted Pendulum Experiments (Data-Driven)
   
 
     
@@ -661,7 +689,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based Controller Experiments
   
 
     
@@ -740,7 +768,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based Baseline Controllers
   
 
     
@@ -875,7 +903,7 @@
   <span class="md-ellipsis">
     
   
-    Alpha Sweep
+    \(\alpha\) Sweep
   
 
     
@@ -891,7 +919,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Alpha Sweep
+    \(\alpha\) Sweep
   
 
           </label>
@@ -920,7 +948,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based Decay-Rate (\(\alpha\)) Sweep
   
 
     
@@ -938,7 +966,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based Decay-Rate (\(\alpha\)) Sweep
   
 
     
@@ -996,21 +1024,66 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#4-hardware-steady-state-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Hardware Steady-State Test
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guaranteedcostsweep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guaranteed-Cost Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guaranteedgainsweep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guaranteed Gain Error Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1053,7 +1126,7 @@
   <span class="md-ellipsis">
     
   
-    Gamma Sweep
+    \(\gamma\) Sweep
   
 
     
@@ -1069,7 +1142,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Gamma Sweep
+    \(\gamma\) Sweep
   
 
           </label>
@@ -1089,7 +1162,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Model-Based: Discount Factor \(\gamma\)-Sweep (\(\alpha = 0.97\))
   
 
     
@@ -1177,17 +1250,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#4-hardware-steady-state-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Hardware Steady-State Test
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1227,7 +1289,8 @@
 <h2 id="1-hardware-robustness-test-guaranteed-cost-hatk_gamma">1. Hardware Robustness Test: Guaranteed Cost (<span class="arithmatex">\(\hat{K}_\gamma\)</span>)</h2>
 <p>The guaranteed-cost controller is tested on the Quanser QUBE-Servo 2 from <span class="arithmatex">\(\alpha = 0.99\)</span> down to <span class="arithmatex">\(\alpha = 0.94\)</span> under manual impulsive pushes to determine its disturbance-rejection range and saturation limit.</p>
 <ul>
-<li><strong>Observation:</strong> Shows <strong>no servo drift</strong> across all tested <span class="arithmatex">\(\alpha\)</span> values (including <span class="arithmatex">\(\alpha = 0.99\)</span>) and recovers cleanly down to <span class="arithmatex">\(\alpha = 0.965\)</span>. Below <span class="arithmatex">\(\alpha = 0.96\)</span>, actuator saturation induces sustained oscillations, giving a practical limit <span class="arithmatex">\(\hat{\alpha}_{\text{lim}} \approx 0.965\)</span>.</li>
+<li><strong>Observation:</strong> Shows <strong>no servo drift</strong> across the tested range and recovers cleanly down to <span class="arithmatex">\(\alpha = 0.965\)</span> (<span class="arithmatex">\(\hat{\alpha}_{\text{lim}} \approx 0.965\)</span>). Below <span class="arithmatex">\(\alpha = 0.965\)</span>, actuator saturation induces sustained oscillations (<span class="arithmatex">\(\alpha = 0.96\)</span>), and by <span class="arithmatex">\(\alpha = 0.94\)</span> the controller becomes unstable immediately at calibration.</li>
+<li><strong>Included Videos:</strong> <span class="arithmatex">\(\alpha = 0.965\)</span>, <span class="arithmatex">\(\alpha = 0.96\)</span>, and <span class="arithmatex">\(\alpha = 0.94\)</span>.</li>
 </ul>
 <p><a href="guaranteedcostsweep/"><strong>View the Guaranteed Cost <span class="arithmatex">\(\alpha\)</span>-Sweep Experiments</strong></a></p>
 <hr />
@@ -1235,15 +1298,9 @@
 <p>The guaranteed gain error controller is tested over the same <span class="arithmatex">\(\alpha \in [0.94, 0.99]\)</span> range to determine whether enforcing a faster decay rate eliminates the servo drift seen in the baseline.</p>
 <ul>
 <li><strong>Observation:</strong> Servo drift disappears once <span class="arithmatex">\(\alpha \le 0.975\)</span>, and pushes are recovered down to <span class="arithmatex">\(\alpha = 0.96\)</span> (<span class="arithmatex">\(\bar{\alpha}_{\text{lim}} \approx 0.96\)</span>). Notably, both <span class="arithmatex">\(\hat{K}_\gamma\)</span> and <span class="arithmatex">\(\bar{K}_\gamma\)</span> lose robustness at the same pendulum-gain threshold (<span class="arithmatex">\(|K_\phi| \approx 24\text{ V/rad}\)</span>), even though their nominal <span class="arithmatex">\(\alpha\)</span> differs by <span class="arithmatex">\(0.01\)</span>.</li>
+<li><strong>Included Videos:</strong> <span class="arithmatex">\(\alpha = 0.965\)</span> and <span class="arithmatex">\(\alpha = 0.96\)</span>.</li>
 </ul>
 <p><a href="guaranteedgainsweep/"><strong>View the Guaranteed Gain Error <span class="arithmatex">\(\alpha\)</span>-Sweep Experiments</strong></a></p>
-<hr />
-<h2 id="4-hardware-steady-state-test">4. Hardware Steady-State Test</h2>
-<p>To evaluate disturbance-free behavior and quantify slow servo wander, both controllers are run twice for <span class="arithmatex">\(\approx 30\text{ s}\)</span> without pushes at each <span class="arithmatex">\(\alpha\)</span>.</p>
-<ul>
-<li><strong>Observation:</strong> No saturation occurs in steady state (<span class="arithmatex">\(0\%\)</span>), but at large <span class="arithmatex">\(\alpha\)</span> (small <span class="arithmatex">\(K_\psi\)</span>) the servo wanders slowly. Using the settling threshold <span class="arithmatex">\(\text{RMS}_\psi \le 15^\circ\)</span> (and drift slope <span class="arithmatex">\(&lt; 0.1^\circ/\text{s}\)</span>), <span class="arithmatex">\(\bar{K}_\gamma\)</span> settles for <span class="arithmatex">\(\alpha \le 0.97\)</span> and <span class="arithmatex">\(\hat{K}_\gamma\)</span> for <span class="arithmatex">\(\alpha \le 0.98\)</span>. Combining this with the robustness limits yields usable windows of <span class="arithmatex">\([0.96, 0.97]\)</span> for <span class="arithmatex">\(\bar{K}_\gamma\)</span> and <span class="arithmatex">\([0.965, 0.98]\)</span> for <span class="arithmatex">\(\hat{K}_\gamma\)</span>, leaving a <strong>common convergence window <span class="arithmatex">\(\alpha_{\text{conv}} \in \{0.965, 0.97\}\)</span></strong> of width <span class="arithmatex">\(\approx 0.01\)</span>.</li>
-</ul>
-<p><a href="steady-state/"><strong>View the Steady-State <span class="arithmatex">\(\alpha\)</span>-Sweep Experiments</strong></a></p>
 
 
 
