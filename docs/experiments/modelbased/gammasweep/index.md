@@ -39,14 +39,14 @@ The two recordings below contrast the moderate-gain regime (\(\gamma = 0.2\), cl
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_gs_g02" width="100%" muted>
       <!-- CHECK RELATIVE PATH DEPTH AND REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../assets/modelbased/gammasweep/anim_Khat_alpha097_gamma02.mp4" type="video/mp4">
+      <source src="../../../assets/modelbased/gamma/gamma0.2.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_gs_g02" width="100%" muted>
       <!-- CHECK RELATIVE PATH DEPTH AND REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../assets/modelbased/gammasweep/Khat_alpha097_gamma02_final.mp4" type="video/mp4">
+      <source src="../../../assets/modelbased/gamma/gamma0.2_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -64,14 +64,14 @@ The two recordings below contrast the moderate-gain regime (\(\gamma = 0.2\), cl
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_gs_g08" width="100%" muted>
       <!-- CHECK RELATIVE PATH DEPTH AND REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../assets/modelbased/gammasweep/anim_Khat_alpha097_gamma08.mp4" type="video/mp4">
+      <source src="../../../assets/modelbased/gamma/gamma0.8.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_gs_g08" width="100%" muted>
       <!-- CHECK RELATIVE PATH DEPTH AND REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../assets/modelbased/gammasweep/Khat_alpha097_gamma08_final.mp4" type="video/mp4">
+      <source src="../../../assets/modelbased/gamma/gamma0.8_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
