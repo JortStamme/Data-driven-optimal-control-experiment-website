@@ -9,7 +9,7 @@ Welcome to the supplementary website accompanying my research internship thesis:
 
 **Author:** Jort Stammen  
 **Supervisors:** Sasha Pogromskiy (TU/e), Dragan Nesic (UoM), Mathieu Granzotto (UoM)  
-**Institutions:** Eindhoven University of Technology (TU/e) & The University of Melbourne 
+**Institutions:** Eindhoven University of Technology (TU/e) & The University of Melbourne (UoM)
 
 ---
 
