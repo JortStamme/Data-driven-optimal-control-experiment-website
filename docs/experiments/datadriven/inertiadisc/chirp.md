@@ -7,31 +7,20 @@ All six controllers (D1 and D2 × Direct noise-free, Direct noisy, and Indirect 
 * **D2 Direct, noisy** achieves the lowest tracking error (\(\text{RMSE} = 74.0^\circ\), \(\text{nRMSE} = 73.9\%\)), while **D2 Direct, noise-free** and **D2 Indirect (LS)** remain identical (\(\text{RMSE} = 85.3^\circ\)).
 * **D1 Direct, noisy** barely tracks the chirp (\(\text{nRMSE} = 101.3\%\), \(\text{RMS } u = 0.54\text{ V}\), \(\max|u| = 1.36\text{ V}\)).
 
-| Set | Design | RMSE [\(^\circ\)] | nRMSE [%] | Control Effort |
-| :---: | :--- | :---: | :---: | :--- |
-| **D1** | Direct, noise-free | 94.7 | 94.6 | \(\text{RMS } u \approx 0.21\text{ V}\), \(\max|u| \le 0.41\text{ V}\) |
-| **D1** | Direct, noisy | 101.5 | 101.3 | \(\text{RMS } u = 0.54\text{ V}\), \(\max|u| = 1.36\text{ V}\) |
-| **D1** | Indirect (LS) | 94.8 | 94.6 | \(\text{RMS } u \approx 0.21\text{ V}\), \(\max|u| \le 0.41\text{ V}\) |
-| **D2** | Direct, noise-free | 85.3 | 85.1 | \(\text{RMS } u \approx 0.21\text{ V}\), \(\max|u| \le 0.41\text{ V}\) |
-| **D2** | Direct, noisy | 74.0 | 73.9 | \(\text{RMS } u \approx 0.21\text{ V}\), \(\max|u| \le 0.41\text{ V}\) |
-| **D2** | Indirect (LS) | 85.3 | 85.2 | \(\text{RMS } u \approx 0.21\text{ V}\), \(\max|u| \le 0.41\text{ V}\) |
-
----
-
 ## 1. D1 (PRBS 3 V) — Direct, noise-free
 <div style="display: flex; justify-content: center; gap: 2%; margin-top: 20px;">
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_chirp_d1_nf" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D1_noisefree_ml.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/tracking_animations/anim_PRBS_3V_K_noisefree_chirp.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_chirp_d1_nf" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D1_noisefree_hw.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/chirp/PRBS_3V_K_noisefree_chirp_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -48,14 +37,14 @@ All six controllers (D1 and D2 × Direct noise-free, Direct noisy, and Indirect 
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_chirp_d1_noisy" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D1_noisy_ml.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/tracking_animations/anim_PRBS_3V_K_noisy_chirp.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_chirp_d1_noisy" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D1_noisy_hw.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/chirp/PRBS_3V_K_noisy_chirp_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -72,14 +61,14 @@ All six controllers (D1 and D2 × Direct noise-free, Direct noisy, and Indirect 
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_chirp_d1_ls" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D1_indirect_ml.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/tracking_animations/anim_PRBS_3V_K_indirect_chirp.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_chirp_d1_ls" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D1_indirect_hw.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/chirp/PRBS_3V_K_indirect_chirp_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -96,14 +85,14 @@ All six controllers (D1 and D2 × Direct noise-free, Direct noisy, and Indirect 
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_chirp_d2_nf" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D2_noisefree_ml.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/tracking_animations/anim_ms_8V_K_noisefree_chirp.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_chirp_d2_nf" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D2_noisefree_hw.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/chirp/ms_8V_K_noisefree_chirp_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -120,14 +109,14 @@ All six controllers (D1 and D2 × Direct noise-free, Direct noisy, and Indirect 
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_chirp_d2_noisy" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D2_noisy_ml.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/tracking_animations/anim_ms_8V_K_noisy_chirp.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_chirp_d2_noisy" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D2_noisy_hw.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/chirp/ms_8V_K_noisy_chirp_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -144,14 +133,14 @@ All six controllers (D1 and D2 × Direct noise-free, Direct noisy, and Indirect 
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_chirp_d2_ls" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D2_indirect_ml.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/tracking_animations/anim_ms_8V_K_indirect_chirp.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_chirp_d2_ls" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/inertiadisc/chirp_D2_indirect_hw.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/inertiadisc/chirp/ms_8V_K_indirect_chirp_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>

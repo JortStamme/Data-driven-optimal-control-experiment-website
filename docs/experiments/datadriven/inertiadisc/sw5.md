@@ -8,17 +8,6 @@ All six controllers (D1 and D2 × Direct noise-free, Direct noisy, and Indirect 
 * **D2 Direct, noise-free** and **D2 Indirect (LS)** wait \(\approx 2\text{ s}\) and produce virtually identical responses (\(e_{\text{ss}} \approx 0.45^\circ\)).
 * **D1 Direct, noise-free** and **D1 Indirect (LS)** stall near \(0^\circ\) (\(e_{\text{ss}} \approx 5.4^\circ\)), while **D1 Direct, noisy** (\(\max|u| = 0.065\text{ V}\)) never breaks stiction (\(\psi \equiv 0^\circ\)).
 
-| Set | Design | RMSE [\(^\circ\)] | \(t_r\) / \(t_s\) [s] | OS / \(e_{\text{ss}}\) [\(^\circ\)] | RMS / \(\max|u|\) [V] |
-| :---: | :--- | :---: | :---: | :---: | :---: |
-| **D1** | Direct, noise-free | 5.86 | – / – | 0.00 / 5.41 | 0.112 / 0.197 |
-| **D1** | Direct, noisy | 5.02 | – / – | 0.00 / 5.02 | 0.038 / 0.065 |
-| **D1** | Indirect (LS) | 5.70 | – / – | 0.00 / 5.43 | 0.103 / 0.195 |
-| **D2** | Direct, noise-free | 7.21 | 1.05 / – | 0.00 / 0.44 | 0.152 / 0.202 |
-| **D2** | Direct, noisy | 5.59 | 0.81 / 2.74 | 0.15 / 0.14 | 0.170 / 0.211 |
-| **D2** | Indirect (LS) | 7.23 | 1.03 / – | 0.00 / 0.45 | 0.152 / 0.206 |
-
----
-
 ## 1. D1 (PRBS 3 V) — Direct, noise-free
 <div style="display: flex; justify-content: center; gap: 2%; margin-top: 20px;">
   <div style="width: 49%;">
