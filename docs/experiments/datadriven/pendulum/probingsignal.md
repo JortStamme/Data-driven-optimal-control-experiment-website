@@ -14,14 +14,14 @@ Because the inverted pendulum is open-loop unstable (\(+13.36\text{ rad/s}\) pol
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_probe_p1" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/probing/anim_probe_P1_ms_08V.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/probing/ProbingSignalms0.8.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_probe_p1" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/probing/probe_P1_ms_08V_final.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/probing/ProbingSignalms0.8V_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -38,14 +38,14 @@ Because the inverted pendulum is open-loop unstable (\(+13.36\text{ rad/s}\) pol
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_probe_p2" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/probing/anim_probe_P2_PRBS_05V.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/probing/ProbingSignalPRBS0.5.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_probe_p2" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/probing/probe_P2_PRBS_05V_final.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/probing/ProbingSignalPRBS0.5V_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
