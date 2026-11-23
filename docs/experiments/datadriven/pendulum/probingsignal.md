@@ -3,7 +3,7 @@
 Because the inverted pendulum is open-loop unstable (\(+13.36\text{ rad/s}\) pole), excitation data must be collected in closed loop using \(u_k = K_{\text{st}}\xi_k + e_k\) with \(K_{\text{st}} = \hat{K}_\gamma\). After manual upright engagement prior to \(t = 10\text{ s}\), the probing signal \(e_k\) is injected for \(20\text{ s}\) of a \(30\text{ s}\) run (\(T \approx 2000\) transitions at \(T_s = 10\text{ ms}\)).
 
 ### Excitation Trade-off & Diagnostics (Table C.7)
-* **P1 (Multisine \(0.8\text{ V}\)):** Odd harmonics (\(0.1\text{--}6\text{ Hz}\), crest factor \(\approx 2.06\)) keep pendulum excursions inside the linear regime (\(\max|\delta\phi| = 7.38^\circ\)), contributing \(\approx 52\%\) of input RMS with a \(10.3\%\) LS residual and \(\hat{\eta} = 0.11\).
+* **P1 (Multisine \(0.8\text{ V}\)):** Odd harmonics (\(0.1\text{-}6\text{ Hz}\), crest factor \(\approx 2.06\)) keep pendulum excursions inside the linear regime (\(\max|\delta\phi| = 7.38^\circ\)), contributing \(\approx 52\%\) of input RMS with a \(10.3\%\) LS residual and \(\hat{\eta} = 0.11\).
 * **P2 (PRBS \(0.5\text{ V}\)):** Flat-spectrum binary sequence (\(5\text{ Hz}\) clock, crest factor \(= 1\)) achieves a higher probing share (\(\approx 65\%\) of input RMS) and roughly halves both the LS residual (\(7.7\%\)) and noise proxy (\(\hat{\eta} = 0.053\)) while staying well within safety and linear bounds.
 
 ---

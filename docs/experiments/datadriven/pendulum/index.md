@@ -11,8 +11,9 @@ u_k = K_{\text{st}} \xi_k + e_k, \qquad x_k = \begin{bmatrix} \delta\phi_k \\ \p
 \]
 
 After manual upright engagement before \(t = 10\text{ s}\), \(e_k\) is applied for \(20\text{ s}\) of a \(30\text{ s}\) run, yielding \(T \approx 2000\) transitions per record. From an excitation amplitude sweep, two datasets inside the linear regime (\(|\delta\phi| \lesssim 10^\circ\)) are selected for controller synthesis:
-* **P1 (Multisine \(0.8\text{ V}\)):** Odd-harmonic multisine (\(\text{RMS}(e)/\text{RMS}(u) \approx 52\%\), \(\kappa(\Omega) = 6.31\), \(10.3\%\) LS residual, \(\hat{\eta} = 0.11\), \(\max|\delta\phi| = 7.38^\circ\)).
-* **P2 (PRBS \(0.5\text{ V}\)):** Binary excitation (\(\text{RMS}(e)/\text{RMS}(u) \approx 65\%\), \(\kappa(\Omega) = 6.56\), \(7.7\%\) LS residual, \(\hat{\eta} = 0.053\)).
+
+ * **P1 (Multisine \(0.8\text{ V}\)):** Odd-harmonic multisine (\(\text{RMS}(e)/\text{RMS}(u) \approx 52\%\), \(\kappa(\Omega) = 6.31\), \(10.3\%\) LS residual, \(\hat{\eta} = 0.11\), \(\max|\delta\phi| = 7.38^\circ\)).
+ * **P2 (PRBS \(0.5\text{ V}\)):** Binary excitation (\(\text{RMS}(e)/\text{RMS}(u) \approx 65\%\), \(\kappa(\Omega) = 6.56\), \(7.7\%\) LS residual, \(\hat{\eta} = 0.053\)).
 
 ### Design Parameters & Synthesised Gains (Table C.8)
 - **Sample Time (\(T_s\)):** \(10\text{ ms}\)

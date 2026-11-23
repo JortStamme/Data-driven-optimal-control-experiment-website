@@ -3,12 +3,13 @@
 Starting from \(\alpha = 0.99\), the prescribed decay rate \(\alpha\) is decreased in steps of \(0.005\text{--}0.01\) down to \(\alpha = 0.94\) while keeping \(\gamma = 0.5\), \(T_s = 10\text{ ms}\), \(Q = \text{diag}(100, 30, 10, 1)\), and \(R = 10\). At each setting, the pendulum is subjected to multiple manual pushes to test disturbance rejection, servo confinement (\(|\psi| < 130^\circ\)), and actuator saturation (\(V_{\text{sat}} = \pm 10\text{ V}\)). This page presents the full sweep summary and the representative experiments at **\(\alpha = 0.965\)**, **\(\alpha = 0.96\)**, and **\(\alpha = 0.94\)**.
 
 ### Summary of Regimes (Table C.4)
-* **\(0.99 \ge \alpha \ge 0.965\):** No servo drift is observed at any value, and both \(\delta\phi\) and \(\psi\) return to a neighbourhood of the origin after every push. From \(\alpha = 0.97\) onward, peak voltages approach or reach \(V_{\text{sat}}\), yet the pendulum still recovers.
-* **\(0.96 \ge \alpha \ge 0.945\):** Following a push, the input saturates and the controller switches between \(\pm 10\text{ V}\) in sustained oscillations (\(|K_\phi| \approx 23.8\text{--}36.2\text{ V/rad}\)).
-* **\(\alpha = 0.94\):** The controller is unstable immediately during calibration (\(|\delta\phi| < 5^\circ\)).
-* **Practical Lower Limit:** \(\hat{\alpha}_{\text{lim}} \approx 0.965\) (corresponding to \(|K_\phi| \approx 21\text{ V/rad}\)).
 
-| \(\alpha\) | \(\rho_{\text{model}}\) | Gain Vector \([K_\phi, K_\psi, K_{\dot{\phi}}, K_{\dot{\psi}}]\) | \(\delta\phi\) conv. | \(\psi\) in bound | Peak \(|u|\) [V] |
+ * **\(0.99 \ge \alpha \ge 0.965\):** No servo drift is observed at any value, and both \(\delta\phi\) and \(\psi\) return to a neighbourhood of the origin after every push. From \(\alpha = 0.97\) onward, peak voltages approach or reach \(V_{\text{sat}}\), yet the pendulum still recovers.
+ * **\(0.96 \ge \alpha \ge 0.945\):** Following a push, the input saturates and the controller switches between \(\pm 10\text{ V}\) in sustained oscillations (\(|K_\phi| \approx 23.8\text{--}36.2\text{ V/rad}\)).
+ * **\(\alpha = 0.94\):** The controller is unstable immediately during calibration (\(|\delta\phi| < 5^\circ\)).
+ * **Practical Lower Limit:** \(\hat{\alpha}_{\text{lim}} \approx 0.965\) (corresponding to \(|K_\phi| \approx 21\text{ V/rad}\)).
+
+| \(\alpha\) | \(\rho_{\text{model}}\) | Gain Vector \([K_\phi, K_\psi, K_{\dot{\phi}}, K_{\dot{\psi}}]\) | \(\delta\phi\) conv. | \(\psi\) in bound | Peak \(\lvert u\rvert\) [V] |
 | :---: | :---: | :--- | :---: | :---: | :---: |
 | 0.99 | 0.9831 | `[-12.404, 0.6354, -0.9232, 0.4117]` | Yes | Yes | 8.36 |
 | 0.98 | 0.9743 | `[-14.867, 0.9112, -1.0962, 0.5158]` | Yes | Yes | 7.11 |

@@ -11,8 +11,9 @@ v_{k+1} = v_k + T_s(\psi_k - r_k), \qquad \bar{x}_k = \begin{bmatrix} \psi_k \\ 
 \]
 
 All six controllers are synthesised from \(T = 1000\) transitions (averaged from four \(10\text{ s}\) periods at \(T_s = 10\text{ ms}\)) collected under two excitation signals:
-* **D1 (PRBS \(3\text{ V}\)):** Period-mismatched averaging stress test (\(5.22\%\) LS residual, \(\hat{\eta} = 7.90 \times 10^{-3}\)).
-* **D2 (Multisine \(8\text{ V}\)):** Clean odd-harmonic baseline (\(1.04\%\) LS residual, \(\hat{\eta} = 3.67 \times 10^{-4}\)).
+
+ * **D1 (PRBS \(3\text{ V}\)):** Period-mismatched averaging stress test (\(5.22\%\) LS residual, \(\hat{\eta} = 7.90 \times 10^{-3}\)).
+ *  **D2 (Multisine \(8\text{ V}\)):** Clean odd-harmonic baseline (\(1.04\%\) LS residual, \(\hat{\eta} = 3.67 \times 10^{-4}\)).
 
 ### Design Parameters & Synthesised Gains (Table 5.11)
 - **Sample Time (\(T_s\)):** \(10\text{ ms}\)
@@ -35,7 +36,7 @@ All six controllers are synthesised from \(T = 1000\) transitions (averaged from
 
 ## Reference Tracking Experiments
 
-All six controllers are tested on hardware across three trajectories (\(0\%\) actuator saturation across all runs; \(2\%\) settling band floored at \(0.176^\circ\)).
+All six controllers are tested on hardware across three trajectories:
 
 ### 1. \(5^\circ\) Square Wave (\(0.125\text{ Hz}\))
 Investigates small-signal static friction (\(\approx 0.18\text{--}0.20\text{ V}\)), integrator wind-up delay after reversals, and steady-state error.

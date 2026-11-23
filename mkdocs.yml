@@ -43,9 +43,9 @@ nav:
           - Guaranteed-Cost Design: experiments/modelbased/baseline/guaranteed-cost.md
           - Guaranteed Gain Error Design: experiments/modelbased/baseline/guaranteedgainerror.md
           - sPI Algorithm: experiments/modelbased/baseline/sPI.md
-      - Alpha Sweep:
+      - \(\alpha\) Sweep:
           - experiments/modelbased/alphasweep/index.md
           - Guaranteed-Cost Design: experiments/modelbased/alphasweep/guaranteedcostsweep.md
           - Guaranteed Gain Error Design: experiments/modelbased/alphasweep/guaranteedgainsweep.md
-      - Gamma Sweep:
+      - \(\gamma\) Sweep:
           - experiments/modelbased/gammasweep/index.md

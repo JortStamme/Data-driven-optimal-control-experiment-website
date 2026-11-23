@@ -3,13 +3,14 @@
 Starting from \(\alpha = 0.99\), the decay rate \(\alpha\) is decreased down to \(\alpha = 0.94\) (\(\gamma = 0.5\), \(T_s = 10\text{ ms}\), \(Q = \text{diag}(100, 30, 10, 1)\), \(R = 10\)). At each value, manual pushes are applied to map where servo drift disappears and where actuator saturation destabilizes the closed loop. This page presents the full sweep summary and the experiments inside the common usable window at **\(\alpha = 0.97\)** and **\(\alpha = 0.965\)**.
 
 ### Summary of Regimes (Table C.3)
-* **\(\alpha \ge 0.98\):** The pendulum is stabilized, but the servo drifts until it hits the \(130^\circ\) safety bound (reproducing the baseline at \(\alpha = 0.98\) and worsening at \(\alpha = 0.99\)).
-* **\(0.975 \ge \alpha \ge 0.965\):** Servo drift disappears; both \(\delta\phi\) and \(\psi\) return to a neighbourhood of the origin after every push with peak voltages well below \(V_{\text{sat}}\).
-* **\(\alpha = 0.96, 0.955\):** The pendulum still recovers, though the input touches \(V_{\text{sat}}\) at \(\alpha = 0.96\) and recovery becomes oscillatory at \(\alpha = 0.955\).
-* **\(\alpha \le 0.95\):** Saturation clips the voltage between \(\pm V_{\text{sat}}\) in an undamped oscillation (\(|K_\phi| \ge 23.9\text{ V/rad}\)), and at \(\alpha = 0.94\) the pendulum cannot be caught at calibration.
-* **Practical Lower Limit:** \(\bar{\alpha}_{\text{lim}} \approx 0.96\) (corresponding to \(|K_\phi| \approx 19\text{--}22\text{ V/rad}\)).
 
-| \(\alpha\) | \(\rho_{\text{model}}\) | Gain Vector \([K_\phi, K_\psi, K_{\dot{\phi}}, K_{\dot{\psi}}]\) | \(\delta\phi\) conv. | \(\psi\) in bound | Peak \(|u|\) [V] |
+ * **\(\alpha \ge 0.98\):** The pendulum is stabilized, but the servo drifts until it hits the \(130^\circ\) safety bound (reproducing the baseline at \(\alpha = 0.98\) and worsening at \(\alpha = 0.99\)).
+ * **\(0.975 \ge \alpha \ge 0.965\):** Servo drift disappears; both \(\delta\phi\) and \(\psi\) return to a neighbourhood of the origin after every push with peak voltages well below \(V_{\text{sat}}\).
+ * **\(\alpha = 0.96, 0.955\):** The pendulum still recovers, though the input touches \(V_{\text{sat}}\) at \(\alpha = 0.96\) and recovery becomes oscillatory at \(\alpha = 0.955\).
+ * **\(\alpha \le 0.95\):** Saturation clips the voltage between \(\pm V_{\text{sat}}\) in an undamped oscillation (\(|K_\phi| \ge 23.9\text{ V/rad}\)), and at \(\alpha = 0.94\) the pendulum cannot be caught at calibration.
+ * **Practical Lower Limit:** \(\bar{\alpha}_{\text{lim}} \approx 0.96\) (corresponding to \(|K_\phi| \approx 19\text{--}22\text{ V/rad}\)).
+
+| \(\alpha\) | \(\rho_{\text{model}}\) | Gain Vector \([K_\phi, K_\psi, K_{\dot{\phi}}, K_{\dot{\psi}}]\) | \(\delta\phi\) conv. | \(\psi\) in bound | Peak \(\lvert u\rvert\) [V] |
 | :---: | :---: | :--- | :---: | :---: | :---: |
 | 0.99 | 0.9899 | `[-10.051, 0.3332, -0.8426, 0.2059]` | Yes | No (drift) | 3.86 |
 | 0.98 | 0.9799 | `[-12.067, 0.4678, -1.0018, 0.2960]` | Yes | No (drift) | 4.66 |
