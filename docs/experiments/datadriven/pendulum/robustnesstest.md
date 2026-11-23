@@ -17,14 +17,14 @@ The five recordings below capture the representative behaviours highlighted in *
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_rob_p2_iv" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/anim_P2_PRBS_05V_indirect_IV.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/indirectIV_PRBS_0.5.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_rob_p2_iv" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/P2_PRBS_05V_indirect_IV_final.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/IndirectIVPRBS0.5V_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -42,14 +42,14 @@ The five recordings below capture the representative behaviours highlighted in *
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_rob_p2_noisy_orig" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/anim_P2_PRBS_05V_noisy_orig.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/noisyorig_PRBS_0.5.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_rob_p2_noisy_orig" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/P2_PRBS_05V_noisy_orig_final.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/NoisyorigPRBS0.5V_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -67,14 +67,14 @@ The five recordings below capture the representative behaviours highlighted in *
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_rob_p2_noisy_rel" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/anim_P2_PRBS_05V_noisy_relaxed.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/noisyrel_PRBS_0.5.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_rob_p2_noisy_rel" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/P2_PRBS_05V_noisy_relaxed_final.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/NoisyrelPRBS0.5V_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -92,14 +92,14 @@ The five recordings below capture the representative behaviours highlighted in *
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_rob_p1_ls" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/anim_P1_ms_08V_indirect_LS.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/indirectLS_ms_0.8.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_rob_p1_ls" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/P1_ms_08V_indirect_LS_final.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/IndirectLSms0.8V_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
@@ -117,14 +117,14 @@ The five recordings below capture the representative behaviours highlighted in *
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Logged Response</div>
     <video id="vid1_rob_p1_nf" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL MATLAB VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/anim_P1_ms_08V_noisefree.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/noisefree_ms_0.8.mp4" type="video/mp4">
     </video>
   </div>
   <div style="width: 49%;">
     <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">Physical Experiment</div>
     <video id="vid2_rob_p1_nf" width="100%" muted>
       <!-- REPLACE WITH YOUR ACTUAL PHYSICAL VIDEO FILE NAME -->
-      <source src="../../../../assets/datadriven/pendulum/robustness/P1_ms_08V_noisefree_final.mp4" type="video/mp4">
+      <source src="../../../../assets/datadriven/pendulum/robustness/Noisefreems0.8V_final.mp4" type="video/mp4">
     </video>
   </div>
 </div>
