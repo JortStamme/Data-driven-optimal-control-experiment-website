@@ -30,7 +30,7 @@ Recovers cleanly from pushes with Peak \(|u| = 6.05\text{ V}\) and settles the s
 
 <div style="display: flex; justify-content: center; gap: 2%; margin-top: 20px;">
   <div style="width: 49%;">
-    <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error &amp; Voltage</div>
+    <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error</div>
     <video id="vid1_kbar_097" width="100%" muted>
       <source src="../../../../assets/modelbased/sweep/Kbaralpha0.97_BE.mp4" type="video/mp4">
     </video>
@@ -54,7 +54,7 @@ Robust recovery from pushes without hitting saturation (Peak \(|u| = 7.01\text{ 
 
 <div style="display: flex; justify-content: center; gap: 2%; margin-top: 20px;">
   <div style="width: 49%;">
-    <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error &amp; Voltage</div>
+    <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error</div>
     <video id="vid1_kbar_0965" width="100%" muted>
       <source src="../../../../assets/modelbased/sweep/Kbaralpha0.965_BE.mp4" type="video/mp4">
     </video>
@@ -71,7 +71,7 @@ Robust recovery from pushes without hitting saturation (Peak \(|u| = 7.01\text{ 
   <button onclick="syncRestart('vid1_kbar_0965', 'vid2_kbar_0965')" style="padding: 8px 15px; font-size: 16px; cursor: pointer; border-radius: 5px;">🔄 Restart</button>
 </div>
 
-<!-- Unified JavaScript function for all synchronized videos on this page -->
+
 <script>
   function syncPlayPause(id1, id2) {
     var v1 = document.getElementById(id1);

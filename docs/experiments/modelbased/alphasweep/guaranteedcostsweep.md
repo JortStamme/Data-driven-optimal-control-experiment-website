@@ -29,7 +29,7 @@ Practical lower limit \(\hat{\alpha}_{\text{lim}} \approx 0.965\). Voltage hits 
 
 <div style="display: flex; justify-content: center; gap: 2%; margin-top: 20px;">
   <div style="width: 49%;">
-    <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error &amp; Voltage</div>
+    <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error</div>
     <video id="vid1_khat_0965" width="100%" muted>
       <source src="../../../../assets/modelbased/sweep/Khatalpha0.965_BE.mp4" type="video/mp4">
     </video>
@@ -53,7 +53,7 @@ Once disturbed (\(|K_\phi| = 23.83\text{ V/rad}\)), the input clips between \(\p
 
 <div style="display: flex; justify-content: center; gap: 2%; margin-top: 20px;">
   <div style="width: 49%;">
-    <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error &amp; Voltage</div>
+    <div style="text-align: center; font-weight: bold; margin-bottom: 5px;">MATLAB: Balance Error</div>
     <video id="vid1_khat_096" width="100%" muted>
       <source src="../../../../assets/modelbased/sweep/Khatalpha0.96_BE.mp4" type="video/mp4">
     </video>
